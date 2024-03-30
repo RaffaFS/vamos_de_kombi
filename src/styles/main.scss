@@ -24,6 +24,8 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    filter: brightness(85%);
 
     .cta1-box{padding: 2vh 0;}
     .cta2-box{padding: 4vh 0;}
