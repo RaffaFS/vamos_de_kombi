@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    color: white;
+}
+
+.background-top-box{
+    height: 35vh;
+    background: url(../img/layered-waves-haikei.svg), url(../img/noiva_diagonal_kombi.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media(min-width:768px){
+        background-position: center;
+    }
+}
+
+.container{
+    background: url(../img/layered-waves-haikei-top.svg),  url(../img/layered-waves-haikei.svg);
+    background-color: rgb(168, 0, 25);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .cta1-box{padding: 2vh 0;}
+    .cta2-box{padding: 4vh 0;}
+    .whatsapp-box{padding: 4vh 0 16vh;
+        
+        .button{
+            max-width: 360px;
+            margin: 0 auto;
+            text-decoration: none;
+            padding: 8px;
+            background-color: rgb(39, 204, 72);
+            box-shadow: -2px 2px 4px #222;
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-evenly;
+
+            img{width: 32px;}
+            p{
+                font-family: "Lilita one", sans-serif;
+                font-weight: 300;
+                font-size: 28px;
+            }
+
+            &:hover{
+                box-shadow: inset -1px 1px 4px #222;
+            }
+        }
+
+        .disclaimer{margin-top: 16px;}
+    }
+
+    .cta-box{
+        max-width: 1280px;
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+
+        .cta{
+            font-family: "Lilita one", sans-serif;
+            font-weight: 300;
+            font-size: 36px;
+            padding: 1vh 0;
+            text-shadow: -2px 2px 2px #222;
+        }
+
+        .disclaimer{
+            font-size: 20px;
+            text-shadow: -2px 2px 2px #222;
+        }
+    }
+}
+
+.background-bottom-box{
+    height: 35vh;
+    background: url(../img/noiva_lateral_kombi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+
+    &::before{
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba($color: #000000, $alpha: .8);
+        z-index: -1;
+    }
+
+    .sobre-box{
+        max-width: 1280px;
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 2vh;
+
+        .kombi{
+            font-family: "Lilita one", sans-serif;
+            font-weight: 300;
+            font-size: 28px;
+            padding: 1vh 0;
+            text-shadow: -2px 2px 2px #222;
+        }
+
+        .disclaimer{
+            font-size: 16px;
+            text-shadow: -2px 2px 2px #222;
+        }
+    }
+}
